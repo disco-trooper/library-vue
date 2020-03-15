@@ -1,24 +1,30 @@
-# library-vue
+<h1 align="center">Welcome to library-vue 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
+  <a href="#" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+</p>
 
-## Project setup
-```
+> A simple book library built with Vue.js
+
+### ✨ [Demo](https://disco-trooper.github.io/library-vue/)
+
+## Install
+
+```sh
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Author
 
-### Compiles and minifies for production
-```
-npm run build
-```
+👤 **disco-trooper**
 
-### Lints and fixes files
-```
-npm run lint
-```
+* Github: [@disco-trooper](https://github.com/disco-trooper)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
