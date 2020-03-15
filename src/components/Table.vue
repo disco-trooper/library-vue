@@ -36,7 +36,8 @@
             @click="
               item.status === 'Read'
                 ? (item.status = 'Unread')
-                : (item.status = 'Read')
+                : (item.status = 'Read');
+              updateLocalStorage();
             "
             >{{ item.status }}
           </v-btn>
@@ -104,6 +105,9 @@ export default {
       addDummies: JSON.parse(localStorage.getItem('addDummies')),
     };
   },
+  updated() {
+    localStorage.setItem('books', JSON.stringify(this.books));
+  },
   created() {
     if (this.addDummies === null) {
       this.populateBookshelf();
@@ -118,12 +122,11 @@ export default {
   methods: {
     addNewBook(newBook) {
       this.books.push(newBook);
-      localStorage.setItem('books', JSON.stringify(this.books));
+      localStorage.setItem('addDummies', false);
     },
     deteleBook(book) {
       this.books.splice(this.books.indexOf(book), 1);
       localStorage.setItem('addDummies', false);
-      localStorage.setItem('books', JSON.stringify(this.books));
     },
     populateBookshelf() {
       const orwell = {
@@ -140,6 +143,10 @@ export default {
       };
       this.books.push(orwell);
       this.books.push(nowBook);
+    },
+    updateLocalStorage() {
+      localStorage.setItem('books', JSON.stringify(this.books));
+      localStorage.setItem('addDummies', false);
     },
   },
 };
