@@ -16,4 +16,4 @@ npm run build
 echo Deploying.. 
 git add -A 
 git commit -m 'deploy' 
-git push -f https://github.com/mejiamanuel57/gh-pages-vue-cli-3.git master
+git push -f https://github.com/disco-trooper/library-vue.git master
