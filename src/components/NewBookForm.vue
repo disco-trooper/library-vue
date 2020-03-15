@@ -1,5 +1,9 @@
 <template>
-  <v-dialog v-model="dialog" width="50%" @click:outside="resetData()">
+  <v-dialog
+    v-model="dialog"
+    :width="$vuetify.breakpoint.smAndDown ? '100%' : '50%'"
+    @click:outside="resetData()"
+  >
     <template v-slot:activator="{ on }">
       <v-btn dark class="mt-2" v-on="on">
         Add New Book
