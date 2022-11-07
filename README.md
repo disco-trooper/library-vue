@@ -6,7 +6,7 @@
   </a>
 </p>
 
-> A simple book library built with Vue.js. Project made as a part of [The Odin Project's curriculum](https://www.theodinproject.com/courses/javascript/lessons/frameworks).
+> A simple book library built with Vue.js that stores data in localStorage.
 
 ### ✨ [Demo](https://disco-trooper.github.io/library-vue/)
 
